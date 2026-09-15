@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小行星 Asteroids</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="gameWrap">
+  <canvas id="game" width="800" height="600"></canvas>
+  <div id="hud">
+    <div><span class="label">SCORE</span> <span id="score">0</span></div>
+    <div><span class="label">HI-SCORE</span> <span id="hiscore">0</span></div>
+  </div>
+  <div id="lives"></div>
+  <div id="startHint">方向鍵 / WASD 移動旋轉・空白鍵射擊・滑鼠移動可轉向瞄準・左鍵發射</div>
+
+  <div id="overlay">
+    <h1>GAME OVER</h1>
+    <div class="score-line">SCORE: <span id="finalScore">0</span></div>
+    <div class="score-line">HI-SCORE: <span id="finalHi">0</span></div>
+    <div class="hint">按下 空白鍵 重新開始</div>
+  </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
